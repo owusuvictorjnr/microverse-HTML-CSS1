@@ -18,7 +18,6 @@
         impedit deleniti quam laudantium!
       </p>
       <form action="" id="survey-form">
-        <option value="dropdown" id="dropdown"></option>
         <label for="name" id="name-label"> Name </label>
         <input
           type="text"
@@ -29,9 +28,9 @@
         />
         <br />
 
-        <label for="emai" id="email-label">Email</label>
+        <label for="email" id="email-label">Email</label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           required
@@ -46,9 +45,42 @@
           min="1"
           max="100"
           placeholder="enter a number"
-        />
+        /><br />
 
-        
+        <label for="dropdown" id="country">Select your country</label>
+        <select id="dropdown">
+          <option value="Ghana" id="dropdown">Ghana</option>
+          <option value="Nigeria" id="dropdown">Nigeria</option></select
+        ><br />
+
+        <label for="month" id="month-label">Months of the year</label><br />
+        <input type="radio" name="month" id="jan" value="January" />
+        <label for="jan">January</label><br />
+
+        <input type="radio" name="month" id="feb" value="February" />
+        <label for="feb">February</label><br />
+
+        <input type="radio" name="month" id="jan" value="March" />
+        <label for="mar">March</label><br /><br />
+
+        <label for="month" id="month-label">mode of study</label><br />
+        <input type="checkbox" name="online" id="online" value="online" />
+        <label for="online">Online</label><br />
+
+        <input
+          type="checkbox"
+          name="in-person"
+          id="inperson"
+          value="in-person"
+        />
+        <label for="person">In-person</label><br />
+
+        <input type="checkbox" name="both" id="both" value="both" />
+        <label for="person">Both</label><br />
+
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea
+        ><br />
+        <input type="submit" id="submit" value="submit" />
       </form>
     </div>
 
