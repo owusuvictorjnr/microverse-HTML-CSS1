@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Fork Me! FCC: Test Suite Template</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<body>
+    <div class="">
+      <h1 id="title">Surver Form</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis saepe
+        sit architecto aperiam nulla reprehenderit molestias, ipsa, harum
+        corporis, necessitatibus culpa temporibus! Eaque, ipsa autem sunt
+        impedit deleniti quam laudantium!
+      </p>
+      <form action="" id="survey-form">
+        <option value="dropdown" id="dropdown"></option>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="enter your name"
+        />
 
-  <h1>Hello World! </h1>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          placeholder="enter your email"
+        />
 
-  <!--
+        <input
+          type="number"
+          id="number"
+          min="6"
+          max="100"
+          placeholder="enter a number"
+        />
 
+        <!-- TODO: coresponding label element for the various input fields -->
+        <label for="name" id="name-label"> </label>
+
+        <label for="emai" id="email-label"></label>
+
+        <label for="number" id="number-label"></label>
+      </form>
+    </div>
+
+    <!--
     Hello Camper!
 
     For now, the test suite only works in Chrome!
@@ -24,7 +63,6 @@
     - The freeCodeCamp Team
 
     -->
-  <script src="js/index.js"></script>
-</body>
-
+    <script src="js/index.js"></script>
+  </body>
 </html>
